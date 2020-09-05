@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ling Sun</title>
+  <title>Web Accessibility Evalution for Fairdata.fi - Ling Sun</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,7 +83,7 @@
 				</div>
 				<div class="info">
 						<h5 class="mb-0">Results</h5>
-						<p>Identify all accessibility issues and fix these issues accordingly so that the web service meets WCAG 2.1 AA level.</p>
+						<p>Identified all accessibility issues and fixed these issues accordingly so that the web service meets WCAG 2.1 AA level.</p>
 				</div>
 			
 			</div>
@@ -91,33 +91,153 @@
 
 		<div class="row mt-5">
 			<div class="col-lg-12">
-				<img src="images/portfolio/fairdata.png" alt="" class="img-fluid w-100">
+				<img src="images/portfolio/tab_order_main.png" alt="" class="img-fluid w-100">
 			</div>
 		</div>
 
-		<div class="col-lg-12">
-			<h5 class="mb-0">My Process</h5>
-			<p>
-			Define the scope -> Find tools -> Preliminary evaluation with automated testing tools -> Comprehensive evaluation with manual testing -> Sort out and report findings -> Fix text alternatives issues and discuss the rest with developers
-			</p>
-			
-			<h5 class="mb-0">Tool Used</h5>
-			<p>Adobe XD, WAVE, ARC Toolkit, NVDA, Voiceover</p>
 
-			<h5 class="mb-0">Timeline</h5>
-			<p> April to August 2020</p>
+		<div class="row mt-5">
+			<div class="col-lg-8">
+				<h5 class="mb-0">My Process</h5>
+				<p>
+				Define the scope -> Find tools -> Preliminary evaluation with automated testing tools -> Comprehensive evaluation with manual testing -> Sort out and report findings -> Fix text alternatives issues and discuss the rest with developers
+				</p>
+				
+				<h5 class="mb-0">Tool Used</h5>
+				<p>Adobe XD, WAVE, ARC Toolkit, NVDA, Voiceover</p>
 
+				<h5 class="mb-0">Timeline</h5>
+				<p> April to August 2020</p>
+			</div>
+		</div>
+
+		
+		<div class="row mt-5">
+			<div class="col-lg-8">
+				<h3 class="mb-4">
+					Accessibility Issues
+				</h3>
+				<p>The major accessibility issues are alternative text, contrast ratio and keyboard-only navigation. 
+					These issues can be easily resolved by adding descriptive alternative text, changing colour combinations and using ARIA labels.</p>
+				
+					<h5 class="mb-3"> Text Alternatives
+				</h5>
+				<p>All non-text content should have a text alternative that conveys the equivalent meaning and purposes. 
+					Text alternatives are one of the main approaches to make information accessible since text can be presented in any sensory modality.</p>
+				<ol style="color:black;"> 
+					<li>All images do not have proper text alternatives</li>
+					<li>Videos do not have a title attribute</li>
+					<li>Videos do not have Finnish captions: 
+						<p style="color:dimgray">People with cognitive disabilities have difficulties in comprehending texts and static images. 
+							They rely on the video to understand the contents. Thus, it is also crucial to provide captions in Finnish.</p></li>
+					<li>Tables on the website do not have table headers</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-8">
+				<h5 class="mb-3">
+					Contrast Ratio				</h5>
+					<p>In web accessibility, <mark>contrast ratio is to check whether the contrast between the text and background is sufficient</mark>.  
+						There are diverse colour vision deficiencies making it impossible to specify a universal colour pair based on the quantitative data. 
+						For different types of disabilities, the requirement of contrast ratio is opposite, especially for people with dyslexia, high luminance is not readable. 
+						In order to overcome this problem, it is recommended to provide a mechanism to adjust the foreground and background colors of the content. 
+						Of course, individuals with colour vision deficiencies also rely on some assistive technologies to achieve appropriate contrast ratio. </p>
+	
+					<p>The <mark>minimal contrast ratio</mark> legally required by WCAG 2.1 is <mark>1:4.5</mark>. The goal is to provide sufficient contrast between the text and the background so that people with low vision can read the text, but does not include people who use contrast-enhancing assistive technology.</p>
+					<p>As the image on the right, the main contrast error happens on the side navigation.  
+					Moreover, the colour #007FAD and #E5F2F7 are two primary colours on the website. Another colour insufficiency is on the text and button backgournd.</p>
+			</div>
+			<div class="col-lg-4">
+				<img src="images/portfolio/color_ratio1.png" alt="" class="img-fluid w-100 mb-4">
+				<img src="images/portfolio/color_ratio2.png" alt="" class="img-fluid w-80">
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-8">
+			<h5 class="mb-3">Keyboard-only Navigation</h5>
+			<p><mark>All elements, including links, buttons, and media player controls, should be accessible using the Tab key. </mark>
+				Meanwhile, the keyboard should be able to activate actions, options, visible changes, and other functionalities. 
+				All these functionalities should reveal a visible focus state and respond to the common key presses.</p>
+			<p>Keyboard-only navigation is the most severe accessibility issue on Fairdata site. 
+				The tab order is poorly structured on the home page and FAQ page. There are keyboard traps and lacking aria-label.</p>
+			<p>Note, <mark>terrible tab order overwhelms people with disabilities and would eventually contribute to a high drop off rate.</mark> </p>
+		</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-12">
+				<img src="images/portfolio/taboder_faq.png" alt="" class="img-fluid w-100">
+			</div>
+		</div>
+
+
+
+		<div class="row mt-5">
+			<div class="col-lg-6">
+				<h5 class="mb-3">Compatibility</h5>
+				<p><mark>Screen reader testing</mark> is applied to inspect the compatibility with different browsers and to <mark>detect unexpected practical issues</mark>.
+					NVDA is the most popular screen readers among people with disabilities, and the use of Voiceover is steadily increasing. 
+					On the other side, Chrome is the most used browser, and Firefox is the second. So, I use NVDA and Voiceover to test the compatibility with Chrome and Firefox.
+					Each screen reader browses headings, links, tables, images, and videos in two browsers. 
+					Then read through the entire web page to check that the content is well-organized and logical. 
+				</p>
+				<p>The website is compatible with both screen readers to some extent, but the performance of the two browsers is different. 
+					Compared with Firefox, <mark>Chrome is a better choice</mark> for both Voiceover and NVDA users, especially for Voiceover users. Firefox is still working on the compatibility with Voiceover. </p>
+			</div>
+
+			<div class="col-lg-5">
+				<img src="images/portfolio/screenreader.png" alt="" class="img-fluid w-100">
+
+			</div>
+
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-12">
+				<img src="images/portfolio/.png" alt="" class="img-fluid w-100">
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-8">
+			<h3 class="mb-3">Scope</h3>
+			<p>The evaluation is carried out on all web contents of the public website, which is located at http://www.fairdata.fi. 
+				This website was published on 14 June 2018 so that it should be accessible before 23rd September 2020.</p>
+			<p>The minimal conformance target is AA level criteria of the WCAG 2.1 guidelines. 
+				The only exception is 1.2.4 Subtitling (for live broadcasts), which do not have to meet the criteria. 
+				Thus, there are a total of 49 criteria required by <a href="https://www.saavutettavuusvaatimukset.fi/lait-ja-standardit/"><u>Finnish law</u></a>.</p>
+			<p>The natural languages of the website are English and Finnish. 
+				The content of the Finnish and English versions of the website are slightly different, but the basic structure is the same. 
+				In this study, the evaluation is only conducted on the English version. 
+				The Finnish version can be improved based on the findings in the English version.</p>
+			<p>The types of website contents are quite fundamental and visual-based. Therefore, the study aims at <mark>improving accessibility for users with visual-related disabilities, auditory disabilities, and cognitive disabilities. </mark></p>
+			<p>The website should <mark>support Voiceover and NVDA on Chrome and Firefox</mark>, which are the most popular combinations in each operating system. 
+				Since the website is primarily designed for desktop access, mobile accessibility is not considered in this evaluation, although the website supports mobile access. 
+				Also, other assistive technologies are not evaluated in this study. </p>
+		</div>
+		</div>
+
+
+		<div class="row mt-5">
+			<div class="col-lg-8">
 			<h3 class="mb-4">Reflection</h3>
-			<p>For a small website like fairdata.fi, I would suggest directly conducting the comprehensive evaluation. 
-				And for future steps, it is better to involve real target users into the usability testing. Accessibility evaluation, especially manual testing, should be an iterated process incorporated in the regular maintenance to ensure web accessibility.
+			<p>Web accessibility can't be easily achieved by complying the WCAG 2.1.
+				It depends highly on the expertise of the evaluator to ensure the quality.
+				However, the most experienced evaluator can't replace the real user. The experience from real user is significant.
 			</p>
+			<p>All issues identified in this audit have been dealt with.</p>
+			<p>The future work should involve target users into the web accessibility evaluation so that more real-world accessibility issues can be discovered. With feedback from real users, the project team can concurrently deepen the understanding of people with disabilities. On the other side, accessibility evaluation, especially manual testing, should be an iterated process incorporated in the regular maintenance to ensure web accessibility.</p>
 
+			</div>
 		</div>
 
 		<div class="row mt-5 justify-content-center">
 			<div class="col-lg-6 text-center">
-				<a href="portfolio-single3.html" class="btn btn-dark">Previous Work</a>
-				<a href="portfolio-single.html" class="btn btn-dark">Next Work</a>
+				<a href="hsl.html" class="btn btn-dark">Previous Work</a>
+				<a href="coffeebreak.html" class="btn btn-dark">Next Work</a>
 			</div>
 		</div>
 	</div>
@@ -128,9 +248,8 @@
 
 <section class="footer">
 	<div class="container center">
-				<h4>Get in touch at <a id="email" class="" href="lingsun.me@gmail.com" target="_blank" style="text-decoration: underline;
+				<h4>Get in touch at <a id="email" class="" href="mailto:lingsun.me@gmail.com" target="_blank" style="text-decoration: underline;
 					color:#F5A623">lingsun.me@gmail.com</a></h4>
-				<p>Last Update: August 2020</p>
 				<div class="widget footer-widget">
 					<ul class="list-inline">
 						<li class="list-inline-item"><a href="https://www.linkedin.com/in/lingsun-ux/" target="_blank"><i class="ti-linkedin mr-3"  style="font-size:20px"></i></a></li>
