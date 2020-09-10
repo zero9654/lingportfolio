@@ -72,7 +72,7 @@
 				<div class="project-info">
 					<h3 class="mb-4">Overview</h3>
 					<h5>The Problem</h5>
-					<p>Web accessibility has not been emphasized during the design and developement of digital products within CSC. While the EU’s Accessibility Act and the Finnish Digital Services Act oblige public sectors to comply with accessibility requirement. The Fairdata service is offered by the Ministry of Education and provided by CSC-IT Center for Science. Therefore, Fairdata services need to reach WCAG 2.1 AA level.</p>
+					<p><mark>Web accessibility has not been emphasized during the design and development</mark> of digital products within CSC. While the EU’s Accessibility Act and the Finnish Digital Services Act oblige public sectors to comply with the accessibility requirement. The Fairdata service is offered by the Ministry of Education and provided by CSC-IT Center for Science. Therefore, Fairdata services need to <mark>reach WCAG 2.1 AA level.</mark></reach></p>
 				</div>
 			</div>
 
@@ -117,8 +117,8 @@
 				<h3 class="mb-4">
 					Accessibility Issues
 				</h3>
-				<p>The major accessibility issues are alternative text, contrast ratio and keyboard-only navigation. 
-					These issues can be easily resolved by adding descriptive alternative text, changing colour combinations and using ARIA labels.</p>
+				<p>The major accessibility issues are alternative text, contrast ratio, and keyboard-only navigation. 
+					These issues can be easily resolved by adding descriptive alternative text, changing colour combinations, and using ARIA labels.</p>
 				
 					<h5 class="mb-3"> Text Alternatives
 				</h5>
@@ -139,15 +139,15 @@
 			<div class="col-lg-8">
 				<h5 class="mb-3">
 					Contrast Ratio				</h5>
-					<p>In web accessibility, <mark>contrast ratio is to check whether the contrast between the text and background is sufficient</mark>.  
+					<p>In web accessibility, <mark>the contrast ratio is to check whether the contrast between the text and background is sufficient. </mark>
 						There are diverse colour vision deficiencies making it impossible to specify a universal colour pair based on the quantitative data. 
 						For different types of disabilities, the requirement of contrast ratio is opposite, especially for people with dyslexia, high luminance is not readable. 
 						In order to overcome this problem, it is recommended to provide a mechanism to adjust the foreground and background colors of the content. 
-						Of course, individuals with colour vision deficiencies also rely on some assistive technologies to achieve appropriate contrast ratio. </p>
-	
+						Of course, individuals with colour vision deficiencies also rely on some assistive technologies to achieve an appropriate contrast ratio.</p>
+
 					<p>The <mark>minimal contrast ratio</mark> legally required by WCAG 2.1 is <mark>1:4.5</mark>. The goal is to provide sufficient contrast between the text and the background so that people with low vision can read the text, but does not include people who use contrast-enhancing assistive technology.</p>
 					<p>As the image on the right, the main contrast error happens on the side navigation.  
-					Moreover, the colour #007FAD and #E5F2F7 are two primary colours on the website. Another colour insufficiency is on the text and button backgournd.</p>
+					Moreover, the colour #007FAD and #E5F2F7 are two primary colours on the website. Another colour insufficiency is on the text and button background.</p>
 			</div>
 			<div class="col-lg-4">
 				<img src="images/portfolio/color_ratio1.png" alt="" class="img-fluid w-100 mb-4">
@@ -161,7 +161,7 @@
 			<p><mark>All elements, including links, buttons, and media player controls, should be accessible using the Tab key. </mark>
 				Meanwhile, the keyboard should be able to activate actions, options, visible changes, and other functionalities. 
 				All these functionalities should reveal a visible focus state and respond to the common key presses.</p>
-			<p>Keyboard-only navigation is the most severe accessibility issue on Fairdata site. 
+			<p>Keyboard-only navigation is the most severe accessibility issue on the Fairdata site. 
 				The tab order is poorly structured on the home page and FAQ page. There are keyboard traps and lacking aria-label.</p>
 			<p>Note, <mark>terrible tab order overwhelms people with disabilities and would eventually contribute to a high drop off rate.</mark> </p>
 		</div>
@@ -185,7 +185,7 @@
 					Then read through the entire web page to check that the content is well-organized and logical. 
 				</p>
 				<p>The website is compatible with both screen readers to some extent, but the performance of the two browsers is different. 
-					Compared with Firefox, <mark>Chrome is a better choice</mark> for both Voiceover and NVDA users, especially for Voiceover users. Firefox is still working on the compatibility with Voiceover. </p>
+					Compared with Firefox, <mark>Chrome is a better choice</mark> for both Voiceover and NVDA users, especially for the Voiceover users. Firefox is still working on the compatibility with Voiceover. </p>
 			</div>
 
 			<div class="col-lg-5">
@@ -213,7 +213,7 @@
 				The content of the Finnish and English versions of the website are slightly different, but the basic structure is the same. 
 				In this study, the evaluation is only conducted on the English version. 
 				The Finnish version can be improved based on the findings in the English version.</p>
-			<p>The types of website contents are quite fundamental and visual-based. Therefore, the study aims at <mark>improving accessibility for users with visual-related disabilities, auditory disabilities, and cognitive disabilities. </mark></p>
+			<p>The types of website content are quite fundamental and visual-based. Therefore, the study aims at <mark>improving accessibility for users with visual-related disabilities, auditory disabilities, and cognitive disabilities. </mark></p>
 			<p>The website should <mark>support Voiceover and NVDA on Chrome and Firefox</mark>, which are the most popular combinations in each operating system. 
 				Since the website is primarily designed for desktop access, mobile accessibility is not considered in this evaluation, although the website supports mobile access. 
 				Also, other assistive technologies are not evaluated in this study. </p>
@@ -224,12 +224,15 @@
 		<div class="row mt-5">
 			<div class="col-lg-8">
 			<h3 class="mb-4">Reflection</h3>
-			<p>Web accessibility can't be easily achieved by complying the WCAG 2.1.
-				It depends highly on the expertise of the evaluator to ensure the quality.
-				However, the most experienced evaluator can't replace the real user. The experience from real user is significant.
+			<p>Web accessibility can't be easily achieved by complying with the WCAG 2.1. 
+				It depends highly on the expertise of the evaluator to ensure quality. 
+				However, the most experienced evaluator can't replace the real user. 
+				The experience from the real user is significant.	
 			</p>
-			<p>All issues identified in this audit have been dealt with.</p>
-			<p>The future work should involve target users into the web accessibility evaluation so that more real-world accessibility issues can be discovered. With feedback from real users, the project team can concurrently deepen the understanding of people with disabilities. On the other side, accessibility evaluation, especially manual testing, should be an iterated process incorporated in the regular maintenance to ensure web accessibility.</p>
+			<p>We have fixed these accessibility issues together with developers.</p>
+			<p>Future work should involve target users in the web accessibility evaluation so that more real-world accessibility issues can be discovered. 
+				With feedback from real users, the project team can concurrently deepen the understanding of people with disabilities. 
+				On the other side, accessibility evaluation, especially manual testing, should be an iterated process incorporated in the regular maintenance to ensure web accessibility.</p>
 
 			</div>
 		</div>
